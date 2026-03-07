@@ -6,6 +6,7 @@ const COMPONENTS = [
   'sobre',
   'missao-visao-valores',
   'produtos-servicos',
+  'planos',
   'cases',
   'clientes',
   'feedback',
