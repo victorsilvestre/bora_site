@@ -1,0 +1,8 @@
+/* Main styles */
+/* Utilização do Tailwind CSS via classes no HTML. 
+   Qualquer CSS não suportado pelo Tailwind via CDN pode ser adicionado aqui. */
+
+/* Custom globals if necessary */
+body {
+    font-family: 'Inter', sans-serif;
+}
