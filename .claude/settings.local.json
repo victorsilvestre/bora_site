@@ -5,7 +5,14 @@
       "Bash(node -e \":*)",
       "Bash(node screenshot.mjs http://localhost:3000/ v2-compare)",
       "Bash(node screenshot.mjs http://localhost:3000/ v3-fixed)",
-      "Bash(node screenshot.mjs http://localhost:3000/ v4-final)"
+      "Bash(node screenshot.mjs http://localhost:3000/ v4-final)",
+      "Bash(node screenshot.mjs http://localhost:3000/ hero-novo)",
+      "Bash(node screenshot-section.mjs sobre sobre)",
+      "Bash(node screenshot-section.mjs clientes clientes)",
+      "Bash(node screenshot-section.mjs app app)",
+      "Bash(node screenshot-section.mjs trabalhe trabalhe)",
+      "Bash(node screenshot-section.mjs servicos servicos)",
+      "Bash(node screenshot-section.mjs faq faq)"
     ]
   }
 }
