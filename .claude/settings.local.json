@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node screenshot.mjs http://localhost:3000/ v1-full)",
+      "Bash(node -e \":*)",
+      "Bash(node screenshot.mjs http://localhost:3000/ v2-compare)",
+      "Bash(node screenshot.mjs http://localhost:3000/ v3-fixed)",
+      "Bash(node screenshot.mjs http://localhost:3000/ v4-final)"
+    ]
+  }
+}
