@@ -15,7 +15,9 @@
       "Bash(node screenshot-section.mjs faq faq)",
       "Bash(node screenshot.mjs \"http://localhost:3000/\" hero)",
       "Bash(node screenshot.mjs \"http://localhost:3000/#sobre\" sobre)",
-      "Bash(node screenshot.mjs \"http://localhost:3000/#servicos\" produtos)"
+      "Bash(node screenshot.mjs \"http://localhost:3000/#servicos\" produtos)",
+      "Bash(node screenshot.mjs http://localhost:3000/ sobre-antes)",
+      "Bash(node screenshot.mjs http://localhost:3000/ depois)"
     ]
   }
 }
