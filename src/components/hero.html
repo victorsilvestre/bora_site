@@ -17,6 +17,14 @@
         <a href="#midia" class="nav-link">BORA na Mídia</a>
         <a href="#bora-app" class="nav-link">App</a>
         <a href="#faq" class="nav-link">FAQ</a>
+
+        <!-- Search button -->
+        <button id="search-btn" aria-label="Buscar no site" class="nav-search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+            <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+
         <a href="https://wa.me/5561982509357" target="_blank" rel="noopener noreferrer"
           class="btn-primary text-sm py-2.5 px-5">
           <!-- WhatsApp icon -->
@@ -28,13 +36,20 @@
         </a>
       </div>
 
-      <!-- Mobile Hamburger -->
-      <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"
+      <!-- Mobile search + hamburger -->
+      <div class="md:hidden flex items-center gap-2">
+        <button id="search-btn-mobile" aria-label="Buscar no site" class="nav-search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+            <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+        <button id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"
         class="md:hidden flex flex-col gap-1.5 p-2 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bora-green">
         <span class="block w-6 h-0.5 bg-white rounded transition-transform duration-300"></span>
         <span class="block w-6 h-0.5 bg-white rounded transition-opacity duration-300"></span>
         <span class="block w-6 h-0.5 bg-white rounded transition-transform duration-300"></span>
       </button>
+      </div><!-- end mobile search+hamburger -->
     </div>
   </div>
 
@@ -51,6 +66,24 @@
         class="btn-primary w-full justify-center">
         Fale Conosco via WhatsApp
       </a>
+    </div>
+  </div>
+
+  <!-- Search Panel -->
+  <div id="search-panel" role="search" aria-label="Busca no site">
+    <div class="container-site">
+      <div class="search-input-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 flex-shrink-0" style="color:rgba(255,255,255,0.35);">
+          <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"/>
+        </svg>
+        <input id="search-input" type="search" placeholder="Buscar no site…" autocomplete="off" />
+        <button id="search-close" aria-label="Fechar busca">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+            <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"/>
+          </svg>
+        </button>
+      </div>
+      <div id="search-results"></div>
     </div>
   </div>
 </nav>

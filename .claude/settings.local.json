@@ -26,7 +26,8 @@
       "Bash(node -e ' *)",
       "Bash(node screenshot.mjs http://localhost:3000/ full)",
       "Bash(node screenshot.mjs http://localhost:3000/ clientes-unified)",
-      "Bash(taskkill /F /IM node.exe)"
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(node \"c:\\\\Users\\\\Victor Silvestre\\\\Desktop\\\\bora_site\\\\screenshot.mjs\" http://localhost:3000/ search-nav)"
     ]
   }
 }
