@@ -7,7 +7,6 @@ const COMPONENTS = [
   'missao-visao-valores',
   'produtos-servicos',
   'planos',
-  'cases',
   'clientes',
   'feedback',
   'midia',
@@ -23,7 +22,7 @@ async function loadComponents() {
 
   for (const name of COMPONENTS) {
     try {
-      const res = await fetch(`./components/${name}.html`);
+      const res = await fetch(`./components/${name}.html`, { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const html = await res.text();
       const wrapper = document.createElement('div');

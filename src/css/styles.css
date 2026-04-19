@@ -33,8 +33,11 @@ body {
 
 /* ---- NAV ---- */
 #main-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 100;
   background: #0D1117;
   border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -166,7 +169,15 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: #00FF3B;
+  color: #00A82E;
+}
+.section-label-light {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #00A82E;
 }
 .section-label-dark {
   font-family: 'Oswald', sans-serif;
@@ -205,7 +216,7 @@ body {
   display: block;
   width: 48px;
   height: 4px;
-  background: #00FF3B;
+  background: #00A82E;
   border-radius: 2px;
   margin-bottom: 1.25rem;
 }
@@ -244,8 +255,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 72px;
-  height: 72px;
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
   background: #F9FAFB;
   border: 2px solid #E5E7EB;
